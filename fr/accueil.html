@@ -25,31 +25,30 @@
             </a>
         </div>
         <div class="header_menu">
-            <img src="../public/assets/Menu.svg" alt="Menu">
+            <img src="../public/assets/Menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <img src="../public/assets/ButtonENG.svg" alt="ButtonENG" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
         </div>
         <div class="menu">
             <img src="../public/assets/Kikis-Journal.svg" alt="Kikis-Journal">
         </div>
-        <div class="meunu" x-show="!menuIsOpen">
+        <div class="menu" x-show="!menuIsOpen">
             <a href="../fr/accueil.html">
                 <img src="../public/assets/Logo-Kikis-Journal.svg" alt="Logo-Kikis-Journal">
             </a>
                 <img src="../public/assets/Croix.svg" alt="Croix">
                 <img src="../public/assets/Kikis-Journal-noir.svg" alt="Kikis-Journal-noir">
-            <a href="../en/home.html">
-                <img src="../public/assets/ButtonENG.svg" alt="ButtonENG">
-            </a>
-            <a href="../fr/article-replique.html">Réplique</a>
-            <a href="../fr/article-film.html">Le film : Kiki la petite sorcière</a>
-            <a href="../fr/article-livre.html">Le livre : Kiki la petite sorcière</a>
-            <a href="../fr/article-realisateur.html">Réalisateur : Hayao Miyazaki</a>
-            <a href="../fr/article-musique.html">La musique : A Town With An Ocean View</a>
-            <a href="../fr/filmographie.html">Filmographie</a>
-            <a href="../fr/bibliographie.html">Bibliographie</a>
-            <a href="../fr/glossaire.html">Glossaire</a>
-            <a href="../fr/informations.html">Informations</a>
-            <a href="../fr/autres-projets.html">Autres projets</a>
-        </div>
+
+            <a class="menu_composent" href="../fr/article-replique.html">Réplique</a>
+            <a class="menu_composent" href="../fr/article-film.html">Le film : Kiki la petite sorcière</a>
+            <a class="menu_composent" href="../fr/article-livre.html">Le livre : Kiki la petite sorcière</a>
+            <a class="menu_composent" href="../fr/article-realisateur.html">Réalisateur : Hayao Miyazaki</a>
+            <a class="menu_composent" href="../fr/article-musique.html">La musique : A Town With An Ocean View</a>
+            <a class="menu_composent" href="../fr/filmographie.html">Filmographie</a>
+            <a class="menu_composent" href="../fr/bibliographie.html">Bibliographie</a>
+            <a class="menu_composent" href="../fr/glossaire.html">Glossaire</a>
+            <a class="menu_composent" href="../fr/informations.html">Informations</a>
+            <a class="menu_composent" href="../fr/autres-projets.html">Autres projets</a>
+         </div>
     </header>
 
     <main class="main" x-show="!menuIsOpen">
