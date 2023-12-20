@@ -9,11 +9,11 @@
 --noir: rgba(5, 5, 5, 1);
 
 /* Text-size styles */
---body: 16px;
---small--body: 12px;
+--p: 16px;
+--small--p: 12px;
 --h3: 25px;
 --h5: 21px;
---large--body: 17px;
+--large--p: 17px;
 --h6: 20px;
 --h4: 25px;
 --h1: 32px;
@@ -45,4 +45,8 @@
     src: url('../fonts/FuturaXBlkBT.ttf');
 }
 
+@font-face {
+    font-family: 'Meladu Rose' ;
+    src: url('../fonts/MeladuRose.ttf');
+}
 }

@@ -1,0 +1,46 @@
+h1 {
+    font-family: 'Futura MdCn BT';
+    font-size: var(--h1);
+}
+
+h2 {
+    font-family: 'Futura XBlk BT';
+    font-size: var(--h2);
+}
+
+h3 {
+    font-family: 'Meladu Rose';
+    font-size: var(--h3);
+}
+
+h4 {
+    font-family: 'Futura MdCn BT';
+    font-size: var(--h4);
+}
+
+h5 {
+    font-family: 'Futura Md BT';
+    font-size: var(--h5);
+}
+
+h6 {
+    font-family: 'Futura Lt BT';
+    font-size: var(--h6);
+}
+
+p {
+    font-family: 'Futura Md BT';
+    font-size: var(--body);
+}
+
+small p {
+    font-family: 'Futura Md BT';
+    font-size: var(--small--p);
+}
+
+large p {
+    font-family: 'Futura Md BT';
+    font-size: var(--large--p);
+}
+
+
