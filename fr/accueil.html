@@ -21,13 +21,13 @@
             </a>
         </div>
         <div class="header__eng">
-            <a href="../en/home.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` "><img src="../public/assets/ButtonENG.svg" alt="ButtonENG"></a>
+            <a href="../en/home.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` "><img src="../public/assets/ButtonENG.svg" alt="ButtonENG">
             </a>
         </div>
         <div class="header__menu">
             <button class="header__menu-button"  @click="menuIsOpen=!menuIsOpen" aria-controls="navmain">
-            <img class="header__img" src="../public/assets/Menu.svg" alt="Menu" x-show="!menuIsOpen" x-transition.duration.1500ms.opacity.0>
-                <img class="header__img" src="../public/assets/Croix.svg" alt="Menu" x-show="menuIsOpen"x-transition.duration.1500ms.opacity.0>
+            <img class="header__img" src="../public/assets/Croix.svg" alt="Menu" x-show="!menuIsOpen"x-transition.duration.1500ms.opacity.0>
+            <img class="header__img" src="../public/assets/Menu.svg" alt="Menu" x-show="menuIsOpen" x-transition.duration.1500ms.opacity.0>
             </button>
 
         </div>
@@ -36,25 +36,25 @@
         </div>
         <div class="menu" x-show="!menuIsOpen">
     
-            <a class="menu_composent" href="../fr/article-replique.html">Réplique</a>
-            <a class="menu_composent" href="../fr/article-film.html">Le film : Kiki la petite sorcière</a>
-            <a class="menu_composent" href="../fr/article-livre.html">Le livre : Kiki la petite sorcière</a>
-            <a class="menu_composent" href="../fr/article-realisateur.html">Réalisateur : Hayao Miyazaki</a>
-            <a class="menu_composent" href="../fr/article-musique.html">La musique : A Town With An Ocean View</a>
-            <a class="menu_composent" href="../fr/filmographie.html">Filmographie</a>
-            <a class="menu_composent" href="../fr/bibliographie.html">Bibliographie</a>
-            <a class="menu_composent" href="../fr/glossaire.html">Glossaire</a>
-            <a class="menu_composent" href="../fr/informations.html">Informations</a>
-            <a class="menu_composent" href="../fr/autres-projets.html">Autres projets</a>
+            <a class="menu__composent" href="../fr/article-replique.html">Réplique</a>
+            <a class="menu__composent" href="../fr/article-film.html">Le film : Kiki la petite sorcière</a>
+            <a class="menu__composent" href="../fr/article-livre.html">Le livre : Kiki la petite sorcière</a>
+            <a class="menu__composent" href="../fr/article-realisateur.html">Réalisateur : Hayao Miyazaki</a>
+            <a class="menu__composent" href="../fr/article-musique.html">La musique : A Town With An Ocean View</a>
+            <a class="menu__composent" href="../fr/filmographie.html">Filmographie</a>
+            <a class="menu__composent" href="../fr/bibliographie.html">Bibliographie</a>
+            <a class="menu__composent" href="../fr/glossaire.html">Glossaire</a>
+            <a class="menu__composent" href="../fr/informations.html">Informations</a>
+            <a class="menu__composent" href="../fr/autres-projets.html">Autres projets</a>
         </div>
     </header>
    
    
     <main class="main" x-show="!menuIsOpen">
 
-        <div>
-            <img src="../public/img/Accueil-kiki.webp" alt="Image_presentation-accueil">
-            <h6>“JE VOLE PARCE QUE CA ME DONNE L’IMPRESSION D’ÊTRE LIBRE” - Kiki</h6>
+        <div class="replique">
+            <img class=replique__img src="../public/img/Accueil-kiki.webp" alt="Image_presentation-accueil">
+            <h6 class="replique__text">“JE VOLE PARCE QUE CA ME DONNE L’IMPRESSION D’ÊTRE LIBRE” - Kiki</h6>
         </div>
 
         <div>
@@ -137,7 +137,47 @@
 </iframe>
 
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content-first">
+                <nav class="footer__content-nav">
+                    <ul class="footer__content-nav--list">
+                        <li><a class="footer__liste-nav--list--text" href="../fr/contact.html">Contact</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/informations.html">Informations</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/glossaire.html">Glossaire</a></li>
+                        <li><img src="../public/assets/address.svg" alt="adress">blandinenhy@gmail.com</li>
+                    </ul>
+                </nav>
+
+                <div class="footer__content-reseaux">
+                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../public/assets/Instagram-logo.svg"
+                            alt="Logo Instagram">
+                    </a>
+                    <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../public/assets/Twitter-logo.svg" alt="Logo X">
+                    </a>
+                </div>
+            </div>
+
+            <div>
+            <a href="https://www.studioghibli.fr">
+            <img src="../public/assets/Chat-bleu.svg" alt="chat">
+            </a>
+            </div>
+
+            <div class="footer__content-down">
+                <div>
+                    <h6 class="footer__content-ml">Mention Légales</h6>
+                    <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                        <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                            Montbéliard</a>
+                    </h6>
+            </div>
+        </div>
+        <img src="../public/assets/Logo-MMI.svg" alt="mmi logo">
+
+        <h6>Blandine Nahorny MMI1 C2</h6>
 
     </footer>
 </body>

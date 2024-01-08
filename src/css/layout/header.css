@@ -1,0 +1,14 @@
+.header__link {
+    justify-self: left;
+    margin-left: 0px;
+}
+
+.header__eng {
+    justify-self: left;
+    margin-left: 268px;
+}
+
+.header__menu-button {
+    justify-self: left;
+    margin-left: 380px;
+}
