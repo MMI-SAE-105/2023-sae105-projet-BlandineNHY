@@ -21,23 +21,20 @@
             </a>
         </div>
         <div class="header__eng">
-            <a href="../en/home.html">
-                <img src="../public/assets/ButtonENG.svg" alt="ButtonENG">
+            <a href="../en/home.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` "><img src="../public/assets/ButtonENG.svg" alt="ButtonENG"></a>
             </a>
         </div>
         <div class="header__menu">
-            <img src="../public/assets/Menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
-            <img src="../public/assets/ButtonENG.svg" alt="ButtonENG" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <button class="header__menu-button"  @click="menuIsOpen=!menuIsOpen" aria-controls="navmain">
+            <img class="header__img" src="../public/assets/Menu.svg" alt="Menu" x-show="!menuIsOpen" x-transition.duration.1500ms.opacity.0>
+                <img class="header__img" src="../public/assets/Croix.svg" alt="Menu" x-show="menuIsOpen"x-transition.duration.1500ms.opacity.0>
+            </button>
+
         </div>
         <div class="menu">
             <img src="../public/assets/Kikis-Journal.svg" alt="Kikis-Journal">
         </div>
         <div class="menu" x-show="!menuIsOpen">
-            <a href="../fr/accueil.html">
-                <img src="../public/assets/Logo-Kikis-Journal.svg" alt="Logo-Kikis-Journal">
-            </a>
-            <img src="../public/assets/Croix.svg" alt="Croix">
-            <img src="../public/assets/Kikis-Journal-noir.svg" alt="Kikis-Journal-noir">
     
             <a class="menu_composent" href="../fr/article-replique.html">Réplique</a>
             <a class="menu_composent" href="../fr/article-film.html">Le film : Kiki la petite sorcière</a>
