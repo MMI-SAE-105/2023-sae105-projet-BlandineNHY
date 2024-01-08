@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../src/css/utils/style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+
+    <main>
+
+        <div>
+            <h5>Contact</h5>
+        </div>
+    
+        <p>
+            Ci-dessous vous trouverez un formulaire de contact afin de me poser des questions ou avoir plus de renseignements.
+        </p>
+        
+
+        <div>
+            <section>
+            <form action="/envoyer-email" method="POST">
+                <label for="nom">Prénom Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Adresse mail :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="objet">Objet :</label>
+                <input type="text" id="objet" name="objet" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+            </section>
+        </div>
+    </main>
