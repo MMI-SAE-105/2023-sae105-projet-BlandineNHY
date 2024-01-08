@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../src/css/utils/style.css">
+    <title>Kiki's Journal</title>
+</head>
+
+<body>
+    <section class="index">
+        <img class="index__logo" src="./public/assets/Kikis-Journal-noir.svg" alt="Kikis-journal-logo">
+        <div class="index__language">
+            <p class="index__p">Welcome !</p>
+            <p class="index__p">Please choose your language</p>
+        </div>
+    </section>
+    <section class="language">
+        <h5 class="language__title">Language</h5>
+        <div class="language__selection">
+            <button class="language__button">
+            <a href="./en/home.html" class="language__link"
+                onclick="document.cookie =`nf_lang=en; path=/ ; SameSite=Strict`">ENGLISH</a>
+            </button>
+            <button class="language__button">
+            <a href="./fr/accueil.html" class="language__link"
+                onclick="document.cookie =`nf_lang=fr; path=/ ; SameSite=Strict`">FRENCH</a>
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>
