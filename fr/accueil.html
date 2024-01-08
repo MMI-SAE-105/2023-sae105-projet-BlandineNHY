@@ -13,18 +13,18 @@
 
 <body>
 
-    <header class="header">
-        <div class="header_logo">
-            <a href="accueil.html">
+    <header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}" class="header">
+        <div class="header__menu">
+            <a href="accueil.html" class="header__link">
                 <img src="../public/assets/Logo-Kikis-Journal.svg" alt="Logo-Kikis-Journal">
             </a>
         </div>
-        <div class="header_eng">
+        <div class="header__eng">
             <a href="../en/home.html">
                 <img src="../public/assets/ButtonENG.svg" alt="ButtonENG">
             </a>
         </div>
-        <div class="header_menu">
+        <div class="header__menu">
             <img src="../public/assets/Menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
             <img src="../public/assets/ButtonENG.svg" alt="ButtonENG" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
         </div>
