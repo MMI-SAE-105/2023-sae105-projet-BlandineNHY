@@ -23,7 +23,7 @@
 .menu__composent--en {
     margin-right: 100px;
     text-decoration: none;
-    front-family: garet, sans serif;
+    font-family: garet, sans serif;
     font-weight: regular;
 }
 
@@ -41,9 +41,19 @@
     padding-top: 5px;
     padding-bottom: 5px;
     box-shadow: 0px 3px 7px 0px #00000065;
-    front-family: garet, sans serif;
+    font-family: garet, sans serif;
     font-weight: regular;
     font-size: 20px;
-    hover: background-color: red;
-    text-align: center;
+    /*hover: background-color: red;
+    text-align: center;*/
+}
+
+.menu__img{
+    position:relative;
+    z-index: 2;
+    width: 456px;
+    height: 227px;
+    flex-shrink: 0;
+    border-radius: 456px;
+    background: var(--Blanc, #FAFAFA);
 }

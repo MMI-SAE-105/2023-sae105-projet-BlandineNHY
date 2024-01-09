@@ -1,3 +1,18 @@
+.header, .header__menu, .menu {
+    background-color: white;
+}
+
+.header {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.header__content {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 70px;
+}
 .header__link {
     justify-self: left;
     margin-left: 0px;
@@ -5,10 +20,15 @@
 
 .header__eng {
     justify-self: left;
-    margin-left: 268px;
+    background-color: white;
+}
+
+.header__select {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
 }
 
 .header__menu-button {
     justify-self: left;
-    margin-left: 380px;
 }
