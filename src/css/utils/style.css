@@ -13,3 +13,40 @@
 @import url(../layout/pages/menu.css);
 
 @import url(../layout/pages/accueil.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+@font-face {
+    font-family: 'bohemian_soul';
+    src: url('../fonts/bohemian_soul/Bohemian\ Soul.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_md_bt';
+    src: url('../fonts/futura_md_bt/FuturaMediumBT.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_md_bt';
+    src: url('../fonts/futura_md_bt/FuturaBoldBT.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura_Lt_BT';
+    src: url('../fonts/Futura_Lt_BT/FUTURAL.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_xblkcnit_bt';
+    src: url('../fonts/futura_xblkcnit_bt/FuturaExtraBlackCondensedItalicBT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
