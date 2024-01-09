@@ -1,3 +1,29 @@
+
+.banner {
+    height: 508px;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 150px;
+}
+
+.banner h1 {
+    font-size: 20px;
+    font-family: "bohemian_soul", sans-serif;
+    text-align: center;
+}
+
+
+.bannerInfo {
+    padding: 12px 0;
+}
+
+.bannerInfo p {
+    font-size: 17px;
+    color: #005E93;
+}
+
 .container {
     padding: 10px 22px;
 }
