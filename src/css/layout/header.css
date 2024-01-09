@@ -1,34 +1,28 @@
-.header, .header__menu, .menu {
-    background-color: white;
+.banner {
+    height: 508px;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 150px;
 }
 
-.header {
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+.banner h1 {
+    font-size: 20px;
+    font-family: "bohemian_soul", sans-serif;
+    text-align: center;
 }
 
-.header__content {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   gap: 70px;
-}
-.header__link {
-    justify-self: left;
-    margin-left: 0px;
+
+.bannerInfo {
+    padding: 12px 0;
 }
 
-.header__eng {
-    justify-self: left;
-    background-color: white;
+.bannerInfo p {
+    font-size: 17px;
+    color: #005E93;
 }
 
-.header__select {
-    display: flex;
-    flex-direction: row;
-    margin-left: 50px;
-}
-
-.header__menu-button {
-    justify-self: left;
+.container {
+    padding: 10px 22px;
 }

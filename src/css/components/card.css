@@ -1,0 +1,106 @@
+.container {
+    padding: 10px 22px;
+}
+
+.article {
+    padding: 30px 0;
+    background-color: #D3EDFF;
+}
+
+.articleHeading {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+}
+
+.articleItem {
+    width: 86%;
+    height: 193px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.articleItemInner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.articleItem::before {
+    width: 100%;
+    height: 100%;
+    background-color: #EAF3FF;
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    z-index: 2;
+}
+
+.articleItem::after {
+    width: 105%;
+    height: 100%;
+    background-color: #005E93;
+    content: '';
+    position: absolute;
+    left: 33px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.articleItemLeft {
+    width: 42%;
+    height: 100%;
+}
+
+.articleItemLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.articleItemRight {
+    width: 58%;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.articleItemRight h3 {
+    font-size: 16px;
+}
+
+.articleBtnWrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.articleItemRight button {
+    width: 79px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.articleItemRight button img {
+    margin-left: 10px;
+}
