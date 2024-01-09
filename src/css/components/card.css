@@ -43,6 +43,23 @@
     margin-bottom: 25px;
 }
 
+.articleHeading::after {
+    width: 100%;
+    height: 3px;
+    background-color: #005E93;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+}
+
+.articleHeading h2 {
+    font-size: 30px;
+    color: #005E93;
+    margin-right: 11px;
+    font-family: "futura_xblkcnit_bt", sans-serif;
+}
+
 .articleItem {
     width: 86%;
     height: 193px;
