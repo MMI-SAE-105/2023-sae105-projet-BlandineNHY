@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="x-for=" expression"">
 
 <head>
     <meta charset="UTF-8">
@@ -55,275 +55,243 @@
     </header>
 
 
-
     <main>
-
-        <div>
-            <h5>Filmographie de Hayao Miyazaki
-                <br>
-                Galerie des 11 films
-            </h5>
-        </div>
-
-        <button class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant"
-            @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth">
-            &lt;
-        </button>
-        <button class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant"
-            @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth">
-            >
-        </button>
-        
-        <div class="carrousel_parent-ecrans" x-ref="parent"
-            @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0) .id">
-            <div id="ecran-1" class="carrousel_ecran">
-        
-                <figure>
-                        <img src="../public/img/img_filmographie/film1.webp"
-                            alt="film1">
-                    <figcaption>
-                        <h4>Affiche de Horus, Prince du soleil</h4>
-                        <h1>1968</h1>
-                        <h4>Horus, Prince du soleil</h4>
-                        <h4>1h22 min
-                        Animation
-                        
-                        Trailer</h4>
-                    </figcaption>
-                </figure>
-        
+        <section class="banner articleBanner filmBanner">
+            <div class="container">
+                <p>
+                    Filmographie de Hayao Miyazaki Galerie des 11 films
+                </p>
             </div>
-            <div id="ecran-2" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film2.webp" alt="film2">
-                    <figcaption>
-                        <h4>Affiche du château de Cagliostro</h4>
-                        <h1>1979</h1>
-                        <h4>Le château de Cagliostro</h4>
-                        <h4>1h40 min
-                        Animation, aventure
-                        
-                        Trailer
-
-                    </h4>
-                    </figcaption>
-                </figure>
-
-            </div>
-            <div id="ecran-3" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film3.webp" alt="film3">
-                    <figcaption>
-                        <h4>Affiche de la série Sherlock Holmes</h4>
-                        <h1>1984</h1>
-                        <h4>Nausicaä de la valée du vent</h4>
-                        <h4>1h57 min
-                        Animation, aventure
-                        
-                        Trailer
-
-                <h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-
-            <div id="ecran-4" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film4.webp" alt="film4">
-                    <figcaption>
-                        <h4>Affiche de la série Sherlock Holmes</h4>
-                        <h1>1988</h1>
-                        <h4>Mon voisin Totoro</h4>
-                        <h4>1h27 min
-                        Animation
-                        
-                        Trailer
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-            <div id="ecran-5" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film5.webp" alt="film5">
-                    <figcaption>
-                        <h4>Affiche de la série Sherlock Holmes</h4>
-                        <h1>1989</h1>
-                        <h4>Kiki la petite sorcière</h4>
-                        <h4>1h42 min
-                        Animation, famille, anventure
-                        
-                        Trailer6
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-            <div id="ecran-6" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film6.webp" alt="film6">
-                    <figcaption>
-                        <h4>Affiche de la Princesse Mononoké</h4>
-                        <h1>1997</h1>
-                        <h4>Princesse Mononoké</h4>
-                        <h4>2h15 min
-                        Animation, drame
-                        
-                        Trailer
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-            <div id="ecran-7" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film7.webp" alt="film7">
-                    <figcaption>
-                        <h4>Affiche du voyage de Chihiro</h4>
-                        <h1>2001</h1>
-                        <h4>Le voyage de Chihiro</h4>
-                        <h4>2h05 min
-                        Animation, aventure
-                        
-                        Trailer
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-            <div id="ecran-8" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film8.webp" alt="film8">
-                    <figcaption>
-                        <h4>Affiche de le château ambulant</h4>
-                        <h1>2004</h1>
-                        <h4>Le château ambulant</h4>
-                        <h4>1h59 min
-                        Animation, fantastique
-                        
-                        Trailer
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-            <div id="ecran-9" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film9.webp" alt="film9">
-                    <figcaption>
-                        <h4>Affiche de Mei et le chatonbus</h4>
-                        <h1>2002</h1>
-                        <h4>Mei et le chatonbus</h4>
-                        <h4>court métrage
-                        13min
-                        Animation, famille
-                        
-                        Trailer
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-            <div id="ecran-10" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film10.webp" alt="film10">
-                    <figcaption>
-                        <h4>Affiche de Ponyo sur la falaise</h4>
-                        <h1>2008</h1>
-                        <h4>Ponyo sur la falaise</h4>
-                        <h4>1h41 min
-                            Animation, famille, aventure
-                        
-                            Trailer
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-
-            <div id="ecran-11" class="carrousel_ecran">
-            
-                <figure>
-                    <img src="../public/img/img_filmographie/film11.webp" alt="film11">
-                    <figcaption>
-                        <h4>Affiche du vent se lève</h4>
-                        <h1>2013</h1>
-                        <h4>Le vent se lève</h4>
-                        <h4>2h07 min
-                            Animation, drame, historique, biopic
-            
-                            Trailer
-                        </h4>
-                    </figcaption>
-                </figure>
-            
-            </div>
-
-            </div>
-        </div>
-
-        
-        <div>
-            <p>Lire l’article auteur : Hayao MIYAZAKI</p>
-            <a href="article-realisateur.html"><img src="../public/assets/flechet-noir.svg" alt=""></a>
-        </div>
-
-            </main>
-            <footer>
-                <div class="container">
-                    <img src="assets/images/footer-bg.svg" alt="" class="footerBg">
-                    <div class="footerTop">
-                        <ul>
-                            <li>
-                                <a href="../fr/contact.html">Contact</a>
-                            </li>
-                            <li>
-                                <a href="../fr/informations.html">Informations</a>
-                            </li>
-                            <li>
-                                <a href="../fr/glossaire.html">Glossaire</a>
-                            </li>
-                            <li>
-                                <a href="#"><span>@</span>blandinenhy@gmail.com</a>
-                            </li>
-                        </ul>
-                        <div class="footerSocial">
-                            <a href="https://www.instagram.com/blandine_nhy/">
-                                <img src="../public/assets/Instagram-logo.svg" alt="insta">
-                            </a>
-                            <a href="https://twitter.com/B_8055_">
-                                <img src="../public/assets/X.svg" alt="twitter">
-                            </a>
+        </section>
+        <section class="filmSlider">
+            <div class="filmSliderWrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide singleSlide">
+                            <h3>1968</h3>
+                            <img src="../public/img/img_filmographie/film1.webp" alt="">
+                            <small>Affiche de Horus, Prince du soleil</small>
+                            <h4>Horus, Prince du soleil</h4>
+                            <p>
+                                1h22 min
+                                <br>
+                                Animation
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
                         </div>
-                    </div>
-                    <div class="footerBottom">
-                        <a href="https://www.studioghibli.fr">
-                            <img src="../public/assets/Chat-bleu-fonce.svg" alt="cat">
-                        </a>
-                        <h3>Mentions légales</h3>
-                        <p>
-                            “projet réalisé dans le cadre d’un exercice
-                            pédagogique au département MMI Montbéliard“
-                        </p>
-                        <div class="footerCopyright">
-                            <a href="https://departement-mmi-montbeliard.business.site">
-                                <img src="../public/assets/Logo-MMI.svg" alt="logo-mmi">
-                            </a>
-                            <p>Blandine Nahorny MMI1 C2</p>
+                        <div class="swiper-slide singleSlide">
+                            <h3>1979</h3>
+                            <img src="../public/img/img_filmographie/film2.webp" alt="">
+                            <small>Affiche du château de Cagliostro</small>
+                            <h4>Le château de Cagliostro</h4>
+                            <p>
+                                1h40 min
+                                <br>
+                                Animation, aventure
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>1984</h3>
+                            <img src="../public/img/img_filmographie/film3.webp" alt="">
+                            <small>Affiche de la série Sherlock Holmes</small>
+                            <h4>Nausicaä de la valée du vent</h4>
+                            <p>
+                                1h57 min
+                                <br>
+                                Animation, aventure
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>1988</h3>
+                            <img src="../public/img/img_filmographie/film4.webp" alt="">
+                            <small>Affiche de la série Sherlock Holmes</small>
+                            <h4>Mon voisin Totoro</h4>
+                            <p>
+                                1h27 min
+                                <br>
+                                Animation
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>1989</h3>
+                            <img src="../public/img/img_filmographie/film5.webp" alt="">
+                            <small>Affiche de la série Sherlock Holmes</small>
+                            <h4>Kiki la petite sorcière</h4>
+                            <p>
+                                1h42 min
+                                <br>
+                                Animation, famille, anventure
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>1997</h3>
+                            <img src="../public/img/img_filmographie/film6.webp" alt="">
+                            <small>Affiche de la Princesse Mononoké</small>
+                            <h4>Princesse Mononoké</h4>
+                            <p>
+                                2h15 min
+                                <br>
+                                Animation, drame
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>2001</h3>
+                            <img src="../public/img/img_filmographie/film7.webp" alt="">
+                            <small>Affiche du voyage de Chihiro</small>
+                            <h4>Le voyage de Chihiro</h4>
+                            <p>
+                                2h05 min
+                                <br>
+                                Animation, aventure
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>2002</h3>
+                            <img src="../public/img/img_filmographie/film8.webp" alt="">
+                            <small>Affiche de Mei et le chatonbus</small>
+                            <h4>court métrage</h4>
+                            <p>
+                                13min
+                                <br>
+                                Animation, famille
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>2004</h3>
+                            <img src="../public/img/img_filmographie/film9.webp" alt="">
+                            <small>Affiche de le château ambulant</small>
+                            <h4>Le château ambulant</h4>
+                            <p>
+                                1h59 min
+                                <br>
+                                Animation, fantastique
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>2008</h3>
+                            <img src="../public/img/img_filmographie/film10.webp" alt="">
+                            <small>Affiche de Ponyo sur la falaise</small>
+                            <h4>Ponyo sur la falaise</h4>
+                            <p>
+                                1h41 min
+                                <br>
+                                Animation, famille, aventure
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
+                        </div>
+                        <div class="swiper-slide singleSlide">
+                            <h3>2013</h3>
+                            <img src="../public/img/img_filmographie/film11.webp" alt="">
+                            <small>Affiche du vent se lève</small>
+                            <h4>Le vent se lève</h4>
+                            <p>
+                                2h07 min
+                                <br>
+                                Animation, drame, historique, biopic
+                            </p>
+                            <p>
+                                Trailer
+                            </p>
                         </div>
                     </div>
                 </div>
-            </footer>
-            </body>
-            
-            </html>
+            </div>
+            <div class="articleGoto">
+                <div class="articleGotoInner">
+                    <span>Lire l’article auteur : Hayao MIYAZAKI</span>
+                    <img src="assets/images/next-svg-white.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <div class="container">
+        <img src="assets/images/footer-bg.svg" alt="" class="footerBg">
+        <div class="footerTop">
+            <ul>
+                <li>
+                    <a href="../fr/contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="../fr/informations.html">Informations</a>
+                </li>
+                <li>
+                    <a href="../fr/glossaire.html">Glossaire</a>
+                </li>
+                <li>
+                    <a href="#"><span>@</span>blandinenhy@gmail.com</a>
+                </li>
+            </ul>
+            <div class="footerSocial">
+                <a href="https://www.instagram.com/blandine_nhy/">
+                    <img src="../public/assets/Instagram-logo.svg" alt="insta">
+                </a>
+                <a href="https://twitter.com/B_8055_">
+                    <img src="../public/assets/X.svg" alt="twitter">
+                </a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <a href="https://www.studioghibli.fr">
+                <img src="../public/assets/Chat-bleu-fonce.svg" alt="cat">
+            </a>
+            <h3>Mentions légales</h3>
+            <p>
+                “projet réalisé dans le cadre d’un exercice
+                pédagogique au département MMI Montbéliard“
+            </p>
+            <div class="footerCopyright">
+                <a href="https://departement-mmi-montbeliard.business.site">
+                    <img src="../public/assets/Logo-MMI.svg" alt="logo-mmi">
+                </a>
+                <p>Blandine Nahorny MMI1 C2</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../src/js/main.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
