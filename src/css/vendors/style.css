@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #D3EDFF;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    display: block;
+    position: relative;
+    min-width: 320px;
+    background-color: white;
+    border-radius: 20px 20px;
+    margin-bottom: 100px;
+
+    .card-container {
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    border-radius: 20px 20px;
+    max-height: 141px;
+    position: relative;
+    }
+  }
+}

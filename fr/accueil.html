@@ -1,186 +1,167 @@
 <!DOCTYPE html>
 <html lang="x-for=" expression"">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <link rel="stylesheet" href="../src/css/utils/style.css">
-    <script>window.onload = function () { if (window.location.pathname.includes('/fr')) { document.querySelector('.header__fr').classList.add('active'); } }</script>
-    <title>Kiki's Journal</title>
-</head>
-
-<body>
-
-    <header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}" class="header">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <script src="//unpkg.com/alpinejs" defer></script>
+      <link rel="stylesheet" href="../src/css/utils/style.css">
+      <script>window.onload = function () { if (window.location.pathname.includes('/fr')) { document.querySelector('.header__fr').classList.add('active'); } }</script>
+      <title>Kiki's Journal</title>
+   </head>
+   <header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}" class="header">
+    <div class="header__content">
         <div class="header__menu">
             <a href="accueil.html" class="header__link">
-                <img src="../public/assets/Logo-Kikis-Journal.svg" alt="Logo-Kikis-Journal">
+            <img src="../public/assets/Logo-Kikis-Journal.svg" alt="Logo-Kikis-Journal">
             </a>
-        </div>
-        <div class="header__eng">
-            <a href="../en/home.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` "><img src="../public/assets/ButtonENG.svg" alt="ButtonENG">
-            </a>
-        </div>
-        <div class="header__menu">
-            <button class="header__menu-button"  @click="menuIsOpen=!menuIsOpen" aria-controls="navmain">
-            <img class="header__img" src="../public/assets/Croix.svg" alt="Menu" x-show="!menuIsOpen"x-transition.duration.1500ms.opacity.0>
-            <img class="header__img" src="../public/assets/Menu.svg" alt="Menu" x-show="menuIsOpen" x-transition.duration.1500ms.opacity.0>
-            </button>
+         </div>
+         <div class="header__select">
+            <div class="header__eng">
+                <a href="../en/home.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` "><img src="../public/assets/ButtonENG.svg" alt="ButtonENG">
+                </a>
+             </div>
+             <div class="header__menu">
+                <button class="header__menu-button"  @click="menuIsOpen=!menuIsOpen" aria-controls="navmain">
+                <img class="header__img" src="../public/assets/Croix.svg" alt="Menu" x-show="!menuIsOpen"x-transition.duration.1500ms.opacity.0>
+                <img class="header__img" src="../public/assets/Menu.svg" alt="Menu" x-show="menuIsOpen" x-transition.duration.1500ms.opacity.0>
+                </button>
+             </div>
+         </div>
 
-        </div>
-        <div class="menu">
-            <img src="../public/assets/Kikis-Journal.svg" alt="Kikis-Journal">
-        </div>
-        <div class="menu" x-show="!menuIsOpen">
-    
-            <a class="menu__composent" href="../fr/article-replique.html">Réplique</a>
-            <a class="menu__composent" href="../fr/article-film.html">Le film : Kiki la petite sorcière</a>
-            <a class="menu__composent" href="../fr/article-livre.html">Le livre : Kiki la petite sorcière</a>
-            <a class="menu__composent" href="../fr/article-realisateur.html">Réalisateur : Hayao Miyazaki</a>
-            <a class="menu__composent" href="../fr/article-musique.html">La musique : A Town With An Ocean View</a>
-            <a class="menu__composent" href="../fr/filmographie.html">Filmographie</a>
-            <a class="menu__composent" href="../fr/bibliographie.html">Bibliographie</a>
-            <a class="menu__composent" href="../fr/glossaire.html">Glossaire</a>
-            <a class="menu__composent" href="../fr/informations.html">Informations</a>
-            <a class="menu__composent" href="../fr/autres-projets.html">Autres projets</a>
-        </div>
-    </header>
-   
-   
-    <main class="main" x-show="!menuIsOpen">
-
-        <div class="replique">
-            <img class=replique__img src="../public/img/Accueil-kiki.webp" alt="Image_presentation-accueil">
-            <h6 class="replique__text">“JE VOLE PARCE QUE CA ME DONNE L’IMPRESSION D’ÊTRE LIBRE” - Kiki</h6>
-        </div>
-
-        <div>
-            <p>Bienvenue aux passionnés de l'univers enchanté des Studios Ghibli, et plus spécifiquement à ceux qui chérissent
-        l’adorable sorcière Kiki !
-        Explorez un monde où la magie rencontre la réalité, où l'imagination prend vie et où les aventures prennent forme.
-        Vous découvrez ou redécouvrez ainsi ce monde si singulier.</p>
-        </div>
-
-
-        <h2>Lire les articles</h2>
-        <img src="../public/assets/Chat-bleu-fonce.svg" alt="">
-        <hr>
-        
-                <div>
-        <img src="../public/img/Vignettes.webp" alt="Vignette">
-        <img src="../public/img/Card1-Accueil.webp" alt="Card1">
-        <p>"Je vole parce que ça me donne l'impression d'être libre" - La Quête Passionnée de la Liberté</p>
-        <div>
-            <button>
-                <a href="article-replique.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
-            </button>
-        </div>
-        </div>
-
-                <div>
-        <img src="../public/img/Vignettes.webp" alt="Vignette">
-        <img src="../public/img/Card2-Accueil.webp" alt="Card2">
-        <p>Le génie derrière les chefs-d'œuvre de l'animation : Hayao Miyazaki</p>
-        <div>
-            <button>
-                <a href="article-realisateur.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
-            </button>
-        </div>
-        </div>
-
-                <div>
-        <img src="../public/img/Vignettes.webp" alt="Vignette">
-        <img src="../public/img/Card3-Accueil.webp" alt="Card3">
-        <p>Kiki la Petite Sorcière : Le Charme Intemporel d'un Chef-d'Œuvre du Studio Ghibli</p>
-        <div>
-            <button>
-                <a href="article-film.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
-            </button>
-        </div>
-        </div>
-
-
-                    <div>
-        <img src="../public/img/Vignettes.webp" alt="Vignette">
-        <img src="../public/img/Card4-Accueil.webp" alt="Card4">
-        <p>Kiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le Monde</p>
-        <div>
-            <button>
-                <a href="article-livre.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
-            </button>
-        </div>
-        </div>
-
-                    <div>
-        <img src="../public/img/Vignettes.webp" alt="Vignette">
-        <img src="../public/img/Card5-Accueil.webp" alt="Card5">
-        <p>Kiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le MondeKiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le Monde</p>
-        <div>
-            <button>
-                <a href="article-musique.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
-            </button>
-        </div>
-        </div>
-        
-    <h2>Kiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le Monde</h2>
-    <img src="../public/assets/Chat-bleu-fonce.svg" alt="decoration">
-    <hr>
-
-    <div>
-        <a href="https://www.youtube.com/watch?v=4bG17OYs-GA"></a>
     </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=4bG17OYs-GA">
-</iframe>
+    <div class="menu">
+       <img src="../public/assets/Kikis-Journal.svg" alt="Kikis-Journal">
+    </div>
+    <div class="menu" x-show="!menuIsOpen">
+       <a class="menu__composent" href="../fr/article-replique.html">Réplique</a>
+       <a class="menu__composent" href="../fr/article-film.html">Le film : Kiki la petite sorcière</a>
+       <a class="menu__composent" href="../fr/article-livre.html">Le livre : Kiki la petite sorcière</a>
+       <a class="menu__composent" href="../fr/article-realisateur.html">Réalisateur : Hayao Miyazaki</a>
+       <a class="menu__composent" href="../fr/article-musique.html">La musique : A Town With An Ocean View</a>
+       <a class="menu__composent" href="../fr/filmographie.html">Filmographie</a>
+       <a class="menu__composent" href="../fr/bibliographie.html">Bibliographie</a>
+       <a class="menu__composent" href="../fr/glossaire.html">Glossaire</a>
+       <a class="menu__composent" href="../fr/informations.html">Informations</a>
+       <a class="menu__composent" href="../fr/autres-projets.html">Autres projets</a>
+    </div>
+    </header>
+   <body>
 
-    </main>
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__content-first">
-                <nav class="footer__content-nav">
-                    <ul class="footer__content-nav--list">
-                        <li><a class="footer__liste-nav--list--text" href="../fr/contact.html">Contact</a></li>
-                        <li><a class="footer__liste-nav--list--text" href="../fr/informations.html">Informations</a></li>
-                        <li><a class="footer__liste-nav--list--text" href="../fr/glossaire.html">Glossaire</a></li>
-                        <li><img src="../public/assets/address.svg" alt="adress">blandinenhy@gmail.com</li>
-                    </ul>
-                </nav>
-
-                <div class="footer__content-reseaux">
-                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
-                        <img class="footer__content-reseaux--img" src="../public/assets/Instagram-logo.svg"
-                            alt="Logo Instagram">
-                    </a>
-                    <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
-                        <img class="footer__content-reseaux--img" src="../public/assets/Twitter-logo.svg" alt="Logo X">
-                    </a>
-                </div>
+      <main class="main" x-show="!menuIsOpen">
+         <div class="replique">
+            <img class=replique__img src="../public/img/Accueil-kiki.webp" alt="Image_presentation-accueil">
+            <h6 class="replique__text">“JE VOLE PARCE QUE CA ME DONNE L’IMPRESSION D’ÊTRE LIBRE” - Kiki</h6>
+         </div>
+         <div>
+            <p>Bienvenue aux passionnés de l'univers enchanté des Studios Ghibli, et plus spécifiquement à ceux qui chérissent
+               l’adorable sorcière Kiki !
+               Explorez un monde où la magie rencontre la réalité, où l'imagination prend vie et où les aventures prennent forme.
+               Vous découvrez ou redécouvrez ainsi ce monde si singulier.
+            </p>
+         </div>
+         <h2>Lire les articles</h2>
+         <img src="../public/assets/Chat-bleu-fonce.svg" alt="">
+         <hr>
+         <div class="card">
+            <div class="card-container">
             </div>
-
+            <img src="../public/img/Card1-Accueil.webp" alt="Card1">
+            <p>"Je vole parce que ça me donne l'impression d'être libre" - La Quête Passionnée de la Liberté</p>
             <div>
-            <a href="https://www.studioghibli.fr">
-            <img src="../public/assets/Chat-bleu.svg" alt="chat">
-            </a>
+               <button>
+               <a href="article-replique.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
+               </button>
             </div>
-
-            <div class="footer__content-down">
-                <div>
-                    <h6 class="footer__content-ml">Mention Légales</h6>
-                    <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
-                        <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
-                            Montbéliard</a>
-                    </h6>
+         </div>
+         <div>
+            <img src="../public/img/Vignettes.webp" alt="Vignette">
+            <img src="../public/img/Card2-Accueil.webp" alt="Card2">
+            <p>Le génie derrière les chefs-d'œuvre de l'animation : Hayao Miyazaki</p>
+            <div>
+               <button>
+               <a href="article-realisateur.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
+               </button>
             </div>
-        </div>
-        <img src="../public/assets/Logo-MMI.svg" alt="mmi logo">
-
-        <h6>Blandine Nahorny MMI1 C2</h6>
-
-    </footer>
-</body>
-
+         </div>
+         <div>
+            <img src="../public/img/Vignettes.webp" alt="Vignette">
+            <img src="../public/img/Card3-Accueil.webp" alt="Card3">
+            <p>Kiki la Petite Sorcière : Le Charme Intemporel d'un Chef-d'Œuvre du Studio Ghibli</p>
+            <div>
+               <button>
+               <a href="article-film.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
+               </button>
+            </div>
+         </div>
+         <div>
+            <img src="../public/img/Vignettes.webp" alt="Vignette">
+            <img src="../public/img/Card4-Accueil.webp" alt="Card4">
+            <p>Kiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le Monde</p>
+            <div>
+               <button>
+               <a href="article-livre.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
+               </button>
+            </div>
+         </div>
+         <div>
+            <img src="../public/img/Vignettes.webp" alt="Vignette">
+            <img src="../public/img/Card5-Accueil.webp" alt="Card5">
+            <p>Kiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le MondeKiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le Monde</p>
+            <div>
+               <button>
+               <a href="article-musique.html">Lire <img src="../public/assets/flechet-noir.svg" alt=""></a>
+               </button>
+            </div>
+         </div>
+         <h2>Kiki la Petite Sorcière : Le Conte Enchanteur qui a Conquis le Monde</h2>
+         <img src="../public/assets/Chat-bleu-fonce.svg" alt="decoration">
+         <hr>
+         <div>
+            <a href="https://www.youtube.com/watch?v=4bG17OYs-GA"></a>
+         </div>
+         <iframe width="560" height="315" src="https://www.youtube.com/watch?v=4bG17OYs-GA">
+         </iframe>
+      </main>
+   </body>
+   <footer class="footer">
+    <div class="footer__content">
+    <div class="footer__content-first">
+       <nav class="footer__content-nav">
+          <ul class="footer__content-nav--list">
+             <li><a class="footer__liste-nav--list--text" href="../fr/contact.html">Contact</a></li>
+             <li><a class="footer__liste-nav--list--text" href="../fr/informations.html">Informations</a></li>
+             <li><a class="footer__liste-nav--list--text" href="../fr/glossaire.html">Glossaire</a></li>
+             <li><img src="../public/assets/address.svg" alt="adress">blandinenhy@gmail.com</li>
+          </ul>
+       </nav>
+       <div class="footer__content-reseaux">
+          <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+          <img class="footer__content-reseaux--img" src="../public/assets/Instagram-logo.svg"
+             alt="Logo Instagram">
+          </a>
+          <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+          <img class="footer__content-reseaux--img" src="../public/assets/Twitter-logo.svg" alt="Logo X">
+          </a>
+       </div>
+    </div>
+    <div>
+       <a href="https://www.studioghibli.fr">
+       <img src="../public/assets/Chat-bleu.svg" alt="chat">
+       </a>
+    </div>
+    <div class="footer__content-down">
+       <div>
+          <h6 class="footer__content-ml">Mention Légales</h6>
+          <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+             <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+             Montbéliard</a>
+          </h6>
+       </div>
+    </div>
+    <img src="../public/assets/Logo-MMI.svg" alt="mmi logo">
+    <h6>Blandine Nahorny MMI1 C2</h6>
+ </footer>
 </html>
-
