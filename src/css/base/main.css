@@ -390,4 +390,14 @@ position: absolute;
         font-size: 40px;
         font-weight: bold;
     }
-}
+
+.overlay-text-accueil{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #050505;
+        font-size: 20px;
+        font-weight: bold;
+        width: 80%;
+    }
