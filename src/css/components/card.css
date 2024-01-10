@@ -147,3 +147,12 @@
 .articleItemRight button img {
     margin-left: 10px;
 }
+
+.articleGotoInner{
+    background-color: #005E93 ;
+    margin: 15px 0;
+    padding: 8px 16px ;
+    width: fit-content;
+    border-radius: 5px; ;
+    color: #E6F5FF;
+}

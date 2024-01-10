@@ -56,7 +56,9 @@ a {
     padding: 10px 22px;
 }
 
-
+img{
+    max-width: 100%;
+}
 
 header {
     position: relative;
@@ -261,11 +263,12 @@ header .container .headerTop {
     height: 208px;
 }
 
-.hr{
-        width: 40%;
-            border: 0.2px solid #0094FF
-            margin-top: 24px;
-            margin-bottom: 24px;
+.hr {
+    width: 100%;
+    font-weight: bold;
+    border: 2px solid #0094FF;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .color__text{
@@ -372,4 +375,3 @@ position: absolute;
     margin-top: 200px;
 
 }
-
