@@ -57,7 +57,7 @@
 
     <main>
 
-        <div>
+        <div class="informations">
             <h5>Contact</h5>
         </div>
     
@@ -66,8 +66,8 @@
         </p>
         
 
-        <div>
-            <section>
+
+        <div class="contact-form">
             <form action="/envoyer-email" method="POST">
                 <label for="nom">Prénom Nom :</label>
                 <input type="text" id="nom" name="nom" required>
@@ -77,13 +77,14 @@
 
                 <label for="objet">Objet :</label>
                 <input type="text" id="objet" name="objet" required>
+
                 <label for="message">Message :</label>
                 <textarea id="message" name="message" required></textarea>
 
                 <button type="submit">Envoyer</button>
             </form>
-            </section>
         </div>
+
     </main>
 
 
