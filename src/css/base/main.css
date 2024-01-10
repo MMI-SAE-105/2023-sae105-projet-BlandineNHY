@@ -284,3 +284,31 @@ header .container .headerTop {
     font-family: Futura Md BT;
     color: #fff;
 }
+
+.containerInformation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+.informations{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #005E93;
+
+}
+
+.informationsAbout{
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #005E93;
+    text-align: center;
+}
+
+.color__textBN{
+    font-weight: bold;
+}
