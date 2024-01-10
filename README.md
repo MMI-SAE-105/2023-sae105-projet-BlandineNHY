@@ -2,6 +2,7 @@
 - NOM : Nahorny
 - PRÉNOM : Blandine
 - URL du site : kikis-journal.netlify.app
+(non fonctionnel- je ne sais pas pourquoi) : kikis-journal.blandinenahorny.fr
 - URL FIGMA : https://www.figma.com/file/XKoI98RpN0OzdB6N2jHTyO/Maquettes-projet-individuel-%E2%80%94-Blandine-NAHORNY?type=design&node-id=1505%3A229&mode=design&t=VL1Ic4JRoI8t8xZA-1
 
 # Structure de départ pour le projet individuel.
