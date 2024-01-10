@@ -303,6 +303,7 @@ header .container .headerTop {
 }
 
 .informationsAbout{
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 17px;
     color: #005E93;
@@ -324,7 +325,7 @@ position: absolute;
 }
 
 .title{
-    margin-top: 100px;
+    margin-top: 180px;
 }
 
                 .contact-form {
@@ -360,4 +361,9 @@ position: absolute;
                 .contact-form button:hover {
                     background-color: #45a049;
                 }
-        
+
+    
+.display{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
