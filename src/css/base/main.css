@@ -401,3 +401,29 @@ position: absolute;
         font-weight: bold;
         width: 80%;
     }
+
+.index__p{
+    margin-top: 50px;
+    margin-left: 150px;
+
+}
+
+.index__p2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+
+}
+
+.index__logo{
+    margin-left: 20px;
+}
+
+.language__button{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.langge__title{
+    margin-left: 150px;
+}
