@@ -153,6 +153,27 @@
     margin: 15px 0;
     padding: 8px 16px ;
     width: fit-content;
-    border-radius: 5px; ;
+    border-radius: 10px; ;
     color: #E6F5FF;
+    margin-block-end: 35px;
+    margin-left: 20px;
+}
+
+.buy{
+margin-top: 40px;
+margin-left: 100px;
+}
+
+.buyBtn{
+    width: 50%;
+    height: 50px;
+    background-color: #005E93;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
