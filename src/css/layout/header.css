@@ -13,6 +13,9 @@
     text-align: center;
 }
 
+.container.introduction {
+    margin-top: 140px;
+    margin-bottom: 50px;
 
 .bannerInfo {
     padding: 12px 0;
