@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
 - NOM : Nahorny
 - PRÉNOM : Blandine
-- URL du site : kikis-journal.netlify.app
+- URL du site : https://kikis-journal.netlify.app
 (non fonctionnel- je ne sais pas pourquoi) : kikis-journal.blandinenahorny.fr
 - URL FIGMA : https://www.figma.com/file/XKoI98RpN0OzdB6N2jHTyO/Maquettes-projet-individuel-%E2%80%94-Blandine-NAHORNY?type=design&node-id=1505%3A229&mode=design&t=VL1Ic4JRoI8t8xZA-1
 
